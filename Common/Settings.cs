@@ -14,6 +14,6 @@ public class Settings
 
     public string Get(string key)
     {
-        return this.configuration[key];
+        return configuration[key] ?? "";
     }
 }

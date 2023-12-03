@@ -47,7 +47,7 @@ public static class Common
                     // is there a number directly to the right of left?
                     if (j > 0)
                     {
-                        var result = checkLineAndPosition(splitLines, i, j - 1);
+                        var result = CheckLineAndPosition(splitLines, i, j - 1);
 
                         if (result.number != null)
                         {
@@ -58,7 +58,7 @@ public static class Common
 
                     if (j < splitLines[i].Count - 1)
                     {
-                        var result = checkLineAndPosition(splitLines, i, j + 1);
+                        var result = CheckLineAndPosition(splitLines, i, j + 1);
 
                         if (result.number != null)
                         {
@@ -70,7 +70,7 @@ public static class Common
                     // check line directly above
                     if (i > 0)
                     {
-                        var result = checkLineAndPosition(splitLines, i - 1, j);
+                        var result = CheckLineAndPosition(splitLines, i - 1, j);
 
                         if (result.number != null)
                         {
@@ -82,7 +82,7 @@ public static class Common
                     // check line directly below
                     if (i < splitLines.Count - 1)
                     {
-                        var result = checkLineAndPosition(splitLines, i + 1, j);
+                        var result = CheckLineAndPosition(splitLines, i + 1, j);
 
                         if (result.number != null)
                         {
@@ -94,7 +94,7 @@ public static class Common
                     // check lines directly above one to left
                     if (i > 0 && j > 0)
                     {
-                        var result = checkLineAndPosition(splitLines, i - 1, j - 1);
+                        var result = CheckLineAndPosition(splitLines, i - 1, j - 1);
 
                         if (result.number != null)
                         {
@@ -106,7 +106,7 @@ public static class Common
                     // check lines directly above one to right
                     if (i > 0 && j < splitLines[i].Count - 1)
                     {
-                        var result = checkLineAndPosition(splitLines, i - 1, j + 1);
+                        var result = CheckLineAndPosition(splitLines, i - 1, j + 1);
 
                         if (result.number != null)
                         {
@@ -118,7 +118,7 @@ public static class Common
                     // check lines directly below one to left
                     if (i < splitLines.Count - 1 && j > 0)
                     {
-                        var result = checkLineAndPosition(splitLines, i + 1, j - 1);
+                        var result = CheckLineAndPosition(splitLines, i + 1, j - 1);
 
                         if (result.number != null)
                         {
@@ -130,7 +130,7 @@ public static class Common
                     // check lines directly below one to right
                     if (i < splitLines.Count - 1 && j < splitLines[i].Count - 1)
                     {
-                        var result = checkLineAndPosition(splitLines, i + 1, j + 1);
+                        var result = CheckLineAndPosition(splitLines, i + 1, j + 1);
                         if (result.number != null)
                         {
                             numbers.Add(result.number);
@@ -155,7 +155,7 @@ public static class Common
 
     }
 
-    static (string? number, List<List<char>> lines) checkLineAndPosition(List<List<char>> splitLines, int i, int j)
+    static (string? number, List<List<char>> lines) CheckLineAndPosition(List<List<char>> splitLines, int i, int j)
     {
         if (char.IsNumber(splitLines[i][j]))
         {

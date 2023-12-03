@@ -20,9 +20,9 @@ namespace Day2
 
             foreach (var game in games)
             {
-                var maxRed = game.Rounds.Max(x => x.Red);
-                var maxGreen = game.Rounds.Max(x => x.Green);
-                var maxBlue = game.Rounds.Max(x => x.Blue);
+                var maxRed = game.Rounds?.Max(x => x.Red) ?? 0;
+                var maxGreen = game.Rounds?.Max(x => x.Green) ?? 0;
+                var maxBlue = game.Rounds?.Max(x => x.Blue) ?? 0;
 
                 var power = maxRed * maxGreen * maxBlue;
 

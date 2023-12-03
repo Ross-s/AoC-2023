@@ -21,7 +21,7 @@ namespace Day2
             foreach (var game in games)
             {
                 // is red valid 
-                if (game.Rounds.All(x => x.Red <= 12 && x.Blue <= 14 && x.Green <= 13))
+                if (game.Rounds != null && game.Rounds.All(x => x.Red <= 12 && x.Blue <= 14 && x.Green <= 13))
                 {
                     countOfValidGames += game.Id;
                 }
