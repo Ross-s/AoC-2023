@@ -31,3 +31,11 @@ Console.WriteLine($"Day 4, Part A: {dayFourPartA.Solve()}");
 // Day 4 Part B
 var dayFourPartB = new Day4.PartB(secret, new DailyInput(secret));
 Console.WriteLine($"Day 4, Part B: {dayFourPartB.Solve()}");
+
+// Day 5 Part A
+var dayFivePartA = new Day5.PartA(secret, new DailyInput(secret));
+Console.WriteLine($"Day 5, Part A: {dayFivePartA.Solve()}");
+
+// Day 5 Part B
+var dayFivePartB = new Day5.PartB(secret, new DailyInput(secret));
+Console.WriteLine($"Day 5, Part B: {dayFivePartB.Solve()}");
