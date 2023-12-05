@@ -349,3 +349,4 @@ healthchecksdb
 MigrationBackup/
 
 local.appsettings.json
+input-*.txt
