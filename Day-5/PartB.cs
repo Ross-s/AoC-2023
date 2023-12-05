@@ -32,8 +32,6 @@ namespace Day5
                     numbers.Add(j);
                 }
 
-                var done = 0;
-
                 Parallel.ForEach(numbers, new ParallelOptions {
                     MaxDegreeOfParallelism = -1
                 }, (seed) =>
@@ -69,11 +67,6 @@ namespace Day5
                     if (lowest > currentMapping)
                     {
                         lowest = currentMapping;
-                    }
-
-                    done++;
-                    if (done % 100 == 0) {
-                        Console.WriteLine($"Done {done} of {numbers.Count}");
                     }
                 });
             }

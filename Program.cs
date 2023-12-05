@@ -36,6 +36,6 @@ Console.WriteLine($"Day 4, Part B: {dayFourPartB.Solve()}");
 var dayFivePartA = new Day5.PartA(secret, new DailyInput(secret));
 Console.WriteLine($"Day 5, Part A: {dayFivePartA.Solve()}");
 
-// Day 5 Part B
-var dayFivePartB = new Day5.PartB(secret, new DailyInput(secret));
-Console.WriteLine($"Day 5, Part B: {dayFivePartB.Solve()}");
+// Day 5 Part B - Warning - see README 
+//var dayFivePartB = new Day5.PartB(secret, new DailyInput(secret));
+//Console.WriteLine($"Day 5, Part B: {dayFivePartB.Solve()}");

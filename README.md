@@ -18,3 +18,7 @@ This is because every users input data is diffrent.
 
 You can locate this code by viweing the cookies on Advent of code's website after you have authenticated
 ![Cookies](/AOC-Cookie.png)
+
+
+## Warnings
+Day 5 - Part B is brute forced and is very expensive. Run at your own risk
