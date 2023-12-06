@@ -49,8 +49,6 @@ namespace Day5
                     }
                 }
 
-                Console.WriteLine($"Seed {seed} maps to {currentMapping}");
-
                 if (lowest > currentMapping)
                 {
                     lowest = currentMapping;
