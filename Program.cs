@@ -36,7 +36,7 @@
 // var dayFivePartA = new Day5.PartA(secret, new DailyInput(secret));
 // Console.WriteLine($"Day 5, Part A: {dayFivePartA.Solve()}");
 
-// // Day 5 Part B - Warning - see README 
+// // Day 5 Part B
 //var dayFivePartB = new Day5.PartB(secret, new DailyInput(secret));
 //Console.WriteLine($"Day 5, Part B: {dayFivePartB.Solve()}");
 
@@ -47,3 +47,27 @@
 // // Day 6 Part B
 // var daySixPartB = new Day6.PartB(secret, new DailyInput(secret));
 // Console.WriteLine($"Day 6, Part B: {daySixPartB.Solve()}");
+
+// // Day 7 Part A
+// var daySevenPartA = new Day7.PartA(secret, new DailyInput(secret));
+// Console.WriteLine($"Day 7, Part A: {daySevenPartA.Solve()}");
+
+// // Day 7 Part B
+// var daySevenPartB = new Day7.PartB(secret, new DailyInput(secret));
+// Console.WriteLine($"Day 7, Part B: {daySevenPartB.Solve()}");
+
+// // Day 8 Part A
+// var dayEightPartA = new Day8.PartA(secret, new DailyInput(secret));
+// Console.WriteLine($"Day 8, Part A: {dayEightPartA.Solve()}");
+
+// // Day 8 Part B
+// var dayEightPartB = new Day8.PartB(secret, new DailyInput(secret));
+// Console.WriteLine($"Day 8, Part B: {dayEightPartB.Solve()}");
+
+// Day 9 Part A
+var dayNinePartA = new Day9.PartA(secret, new DailyInput(secret));
+Console.WriteLine($"Day 9, Part A: {dayNinePartA.Solve()}");
+
+// Day 9 Part B
+var dayNinePartB = new Day9.PartB(secret, new DailyInput(secret));
+Console.WriteLine($"Day 9, Part B: {dayNinePartB.Solve()}");

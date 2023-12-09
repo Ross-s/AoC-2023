@@ -52,7 +52,6 @@ public static class Common
     public static int HowManyWaysCanIBeatRace(Race race)
     {
         var count = 0;
-        var done = 0;
         Parallel.For(0, race.Time, new ParallelOptions {
             MaxDegreeOfParallelism = -1
         }, (i) =>
